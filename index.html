@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-CompatibleIE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script class="u-script" type="text/javascript" src="index.js"></script>
+
+<!--DEVICE viewport-->
+    <meta name= "viewport" content= "width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <section class="sec-1">
+        <div id="box-1">
+            <div>
+                <img id="logo" src="https://image.jimcdn.com/app/cms/image/transf/none/path/s0d7725409e445619/image/icc44ce5965982a7e/version/1509468791/image.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <nav class="menu center">
+        <div class="navbar center">
+            <a id="activepoint" href="sito.html">HOME</a>
+            <div class="dropdown">
+                <button class="dropbtn" onpointerenter="reClasse1()" onpointerleave="addClasse1()" >CHI SIAMO</button>
+                <div id="myDropdown1" class="dropdown-content o-1 t-1" onpointerenter="reClasse1()" onpointerleave="addClasse1()">
+                  <a id="notcolor">PERCHE' UNCENSORED RUNNER</a>
+                  <a id="notcolor" href="coachpage.html">COACH</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+              <button class="dropbtn" onpointerenter="reClasse2()" onpointerleave="addClasse2()" >IL PARKOUR</button>
+              <div id="myDropdown2" class="dropdown-content o-2 t-2" onpointerenter="reClasse2()" onpointerleave="addClasse2()">
+                <a id="notcolor" href="coseparkourPage.html">COS'E' IL PARKOUR</a>
+                <a id="notcolor">STORIA DEL PARKOUR</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" onpointerenter="reClasse3()" onpointerleave="addClasse3()" >DOVE SIAMO</button>
+                <div id="myDropdown3" class="dropdown-content o-3 t-3" onpointerenter="reClasse3()" onpointerleave="addClasse3()">
+                  <a id="notcolor" target="_blank" href="https://maps.google.com/maps?ll=45.406925,11.872856&z=16&t=h&hl=it-IT&gl=US&mapclient=embed&q=Piazza%20Duomo%2C%201%2035122%20Padova%20PD">PADOVA</a>
+                  <a id="notcolor" target="_blank" href="https://www.google.com/maps/place/TEATRO+FRIDA/@45.3151221,12.0094536,786m/data=!3m2!1e3!4b1!4m6!3m5!1s0x477ec1722dfaa4bf:0x8507a8a6fb275d71!8m2!3d45.3151184!4d12.0143245!16s%2Fg%2F11h6nsqh89?hl=it-IT">VIGOROVEA</a>
+                </div>
+            </div>
+            
+            <a>CONTATTI</a>
+        </div>
+    </nav>
+
+</body>
+
+<section class="sec-2">
+<a class="center" id="UR"><br>UNCENSORED RUNNER</a>
+</section>
+
+<script>
+    {
+        function cambiaClasse1()
+        {
+            var dropdownContent = document.getElementById("myDropdown1");
+            dropdownContent.classList.toggle("o-1");
+        }
+
+        function addClasse1()
+        {
+            var dropdownContent = document.getElementById("myDropdown1");
+            dropdownContent.classList.add("o-1");
+        }
+
+        function reClasse1()
+        {
+            var dropdownContent = document.getElementById("myDropdown1");
+            dropdownContent.classList.remove("o-1");
+        }
+    }
+
+    {
+        function cambiaClasse2()
+        {
+            var dropdownContent = document.getElementById("myDropdown2");
+            dropdownContent.classList.toggle("o-2");
+        }
+
+        function addClasse2()
+        {
+            var dropdownContent = document.getElementById("myDropdown2");
+            dropdownContent.classList.add("o-2");
+        }
+
+        function reClasse2()
+        {
+            var dropdownContent = document.getElementById("myDropdown2");
+            dropdownContent.classList.remove("o-2");
+        }
+    }
+    
+    {
+        function cambiaClasse3()
+        {
+            var dropdownContent = document.getElementById("myDropdown3");
+            dropdownContent.classList.toggle("o-3");
+        }
+
+        function addClasse3()
+        {
+            var dropdownContent = document.getElementById("myDropdown3");
+            dropdownContent.classList.add("o-3");
+        }
+
+        function reClasse3()
+        {
+            var dropdownContent = document.getElementById("myDropdown3");
+            dropdownContent.classList.remove("o-3");
+        }
+    }
+</script>
+
+</html>
